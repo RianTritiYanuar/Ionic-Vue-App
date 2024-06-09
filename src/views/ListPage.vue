@@ -35,9 +35,12 @@
 </template>
 
 <script>
+import { IonButton } from "@ionic/vue";
 import { fetchData } from "../services/apiService";
+import { defineComponent } from 'vue';
 
-export default {
+export default defineComponent({
+  components: { IonButton },
   data() {
     return {
       data: null,
@@ -61,7 +64,7 @@ export default {
       }
     },
   },
-};
+});
 </script>
 
 <style scoped>
@@ -78,7 +81,7 @@ export default {
   background-color: lightgoldenrodyellow;
   border-style: solid;
   border-color: darkgoldenrod;
-  border-width: 0px 1px 1px 1px;
+  border-width: 1px 1px 0px 1px;
 }
 .container-type-1 {
   display: flex;
