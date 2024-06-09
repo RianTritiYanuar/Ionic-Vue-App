@@ -37,7 +37,7 @@
 <script>
 import { IonButton } from "@ionic/vue";
 import { fetchData } from "../services/apiService";
-import { defineComponent } from 'vue';
+import { defineComponent } from "vue";
 
 export default defineComponent({
   components: { IonButton },
@@ -84,11 +84,13 @@ export default defineComponent({
   border-width: 1px 1px 0px 1px;
 }
 .container-type-1 {
+  width: 20%;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 .container-type-2 {
+  width: 40%;
   display: flex;
   flex-direction: column;
 }

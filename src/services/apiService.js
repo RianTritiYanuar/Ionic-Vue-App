@@ -13,16 +13,3 @@ export const fetchData = async () => {
     throw error;
   }
 };
-
-export const postData = async (data) => {
-  try {
-    const response = await axiosInstance.post("/data", data);
-    return response.data;
-  } catch (error) {
-    // Handle error appropriately
-    console.error("Error posting data:", error);
-    throw error;
-  }
-};
-
-// Add more API functions as needed
